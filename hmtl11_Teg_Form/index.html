@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Тег Form сам по себе ничего не представляет, но является роидтельским тегом для содержимая остальных тегов, которые будут служить для создания формы-->
+    <form action="" method=""> <!--action - атрибут для указания страницы на которой будет происходить обработка всей формы, method - для уакзания метода педачи данных из формы get или post(обычно его выбирают)-->
+        <label>Введите текст</label> <!--Создаем подпись для поля-->
+        <input type="text" placeholder="Введите что-то"><br> <!--Создаем поле для ввода информации, type - для указания типа поля, placeholder - отображает подсказку внутри поля-->
+
+        <label>Введите Имя</label>
+        <input type="text" placeholder="Введите Имя" value="Имя: " maxlength="5" name="user_name" id="user_name"><br> <!-- value - создает текст внутри поля, maxlegth - для указания размера максимального кол-во символов, name - для наименования, id - идентификатор-->
+
+        <label>Введите Имя</label>
+        <input type="text" placeholder="Введите Имя" value="Имя: " maxlength="5" hidden><br> <!-- hidden - чтобы скрыть поле-->
+
+        <label>Введите Имя</label>
+        <input type="text" placeholder="Введите Имя" value="Имя: " maxlength="5" disabled><br> <!-- disabled - деактивирует поле и туда нельзя ничего ввести-->
+
+        <label for="username1">Введите Имя</label> <!--for - выделяет по id поле если кликнуть на подпись Введите имя-->
+        <input type="text" placeholder="Введите Имя" value="Имя: " maxlength="5" id="username1">
+        <input type="password"> <!--Тип поле пароль, пароль не будет отображаться, вместо него точки-->
+        <input type="email"> <!-- Тип электронная почта выводится подсказка при наведении и некорректом вводе почте-->
+        <input type="url"> <!-- Тип для ввода url адреса, ничем не отличается от text-->
+        <input type="color"> <!-- Тип для выбора цвета, поддерживается не во всех браузерах-->
+        <input type="date"> <!-- Поле для выбора даты, не все браузеры поддерживаются-->
+        <input type="time"> <!-- Поле для установки времени-->
+        <input type="datetime"> <!--Поле для даты и времени вписывать самому, визуально такой же как text-->
+        <input type="checkbox"> <!-- Поле для галочки-->
+        <input type="radio"><br> <!-- Выборка например пол-->
+
+        <!-- Поля для выбора поля, у них одинаковое имя специально чтобы при выборе одного поля второе автоматически не убиралось-->
+        <label>male</label>
+        <input type="radio" placeholder="Введите Имя" value="Имя: " maxlength="5" name="sex"><br>
+        <label>female</label>
+        <input type="radio" placeholder="Введите Имя" value="Имя: " maxlength="5" name="sex"><br>
+        
+        <input type="file"><br> <!--Поле для выбора файла-->
+        <input type="button"> <!--Кнопка без перезагрузки страницы, то есть без отправки каких либо данных-->
+        <input type="submit" value="Отправить"><br> <!--Кнопка с перезагрузкой страницы, то есть c отправкой каких либо данных, value для наименования кнопки-->
+        <input type="reset" value="Очистить"> <!-- Очищает всю форму-->
+
+
+    </form>
+</body>
+</html>
