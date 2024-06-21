@@ -1,0 +1,4 @@
+/* Добавляем стиль ко всем тегам body в html*/
+body {
+    color: green;
+}
