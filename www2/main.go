@@ -19,11 +19,11 @@ func main() {
 func Homepage(w http.ResponseWriter, r *http.Request) {
 	Bob := User{name: "Bob", age: 25, money: 50, avg_grades: 4.2, happiness: 0.8}
 	Bob.SetNewName("Alex")
-	fmt.Fprintf(w, Bob.GetAllInfo())
+	fmt.Fprint(w, Bob.GetAllInfo())
 }
 
 func Contactspage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "My contacts!")
+	fmt.Fprint(w, "My contacts!")
 }
 
 func HandleRequest() {
